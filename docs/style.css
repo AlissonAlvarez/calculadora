@@ -1,0 +1,76 @@
+/************************************import************************************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
+
+/*************************************html*************************************/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*********************************calculadora**********************************/
+.contenedor {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora {
+    width: 40%;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 10%;
+    background: linear-gradient(30deg, #ffff 0%, #bbb4b4 100%);    
+}
+
+.pantalla {
+    width: 80%;
+    height: 20%;
+    margin: 10% auto auto 10%;
+    padding: 10% 10% 10% 10%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    font-weight: bold;    
+    background-color: white;     
+}
+
+.teclado {
+    width: 90%;
+    margin: auto 5% 5% 5%;
+    padding: 5% 5%; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;    
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.numero {
+    background-color: #ed7f7b;
+}
+
+.operador {
+    background-color: #ffe9a8;
+}
+
+.boton {
+    grid-column: 2 span;
+}
