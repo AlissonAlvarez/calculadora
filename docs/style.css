@@ -74,3 +74,10 @@ button:hover {
 .boton {
     grid-column: 2 span;
 }
+
+/**********************************responsive**********************************/
+@media (max-width: 700px) {
+    .calculadora {
+        width: 100%;
+    }
+}
